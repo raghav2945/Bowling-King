@@ -498,7 +498,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 284220325}
+      - m_Target: {fileID: 0}
         m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:
@@ -738,8 +738,8 @@ GameObject:
   - component: {fileID: 284220321}
   - component: {fileID: 284220323}
   - component: {fileID: 284220322}
-  - component: {fileID: 284220325}
   - component: {fileID: 284220324}
+  - component: {fileID: 284220325}
   m_Layer: 0
   m_Name: PinSetter
   m_TagString: Untagged
@@ -1024,7 +1024,6 @@ GameObject:
   - component: {fileID: 416215174}
   - component: {fileID: 416215173}
   - component: {fileID: 416215177}
-  - component: {fileID: 416215178}
   m_Layer: 0
   m_Name: Swiper
   m_TagString: Untagged
@@ -1122,25 +1121,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &416215178
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 416215172}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 49caf203fe13f244b843f527509ae6f5, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &672915487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1838,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 284220325}
+      - m_Target: {fileID: 0}
         m_MethodName: SetTrigger
         m_Mode: 5
         m_Arguments:

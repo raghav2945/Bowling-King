@@ -8,11 +8,12 @@ public class Pin : MonoBehaviour
     public float standingTreshold = 3f;
     public float standingTreshold360 = 357f;
 
-    
+    private float distanceToRaise = 40f;
+    private Rigidbody rigidbody;
     // Start is called before the first frame update
     void Start()
     {
-        //Debug.Log(name + IsStanding());
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     public bool IsStanding()
@@ -34,5 +35,21 @@ public class Pin : MonoBehaviour
     void Update()
     {
         //Debug.Log(name + IsStanding());
-    }    
+    }
+
+    public void Raise() {
+        if (IsStanding())
+        {
+            Debug.Log("Raising pins name : " + this.name);
+            rigidbody.useGravity = false;
+            transform.Translate(new Vector3(0, distanceToRaise, 0), Space.World);
+        }
+    }
+
+    public void Lower()
+    {
+        transform.Translate(new Vector3(0, -distanceToRaise, 0), Space.World);
+        rigidbody.useGravity = true;
+    }
+
 }

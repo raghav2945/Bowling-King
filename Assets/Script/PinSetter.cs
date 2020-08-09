@@ -11,7 +11,7 @@ public class PinSetter : MonoBehaviour
     private bool ballEnteredBox = false;
     private float lastChangeTime;
     private Ball ball;
-    private float distanceToRaise = 0.40f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -31,15 +31,16 @@ public class PinSetter : MonoBehaviour
         Debug.Log("Raising pins!!");
         foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
         {
-            if (pin.IsStanding())
-            {
-                pin.transform.Translate(new Vector3(0, distanceToRaise, 0));
-            }
+            pin.Raise();
         }
     }
 
     public void LowerPins() {
-        Debug.Log("Lowering pins!!");
+        //Debug.Log("Lowering pins!!");
+        foreach (Pin pin in GameObject.FindObjectsOfType<Pin>())
+        {
+            pin.Lower();
+        }
     }
 
     public void RenewPins()
