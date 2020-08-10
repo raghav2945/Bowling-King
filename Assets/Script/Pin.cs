@@ -46,6 +46,7 @@ public class Pin : MonoBehaviour
         }
     }
 
+    
     public void Lower()
     {
         transform.Translate(new Vector3(0, -distanceToRaise, 0), Space.World);
