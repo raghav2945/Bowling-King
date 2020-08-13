@@ -40,9 +40,10 @@ public class Ball : MonoBehaviour
 
     public void Reset()
     {
-        Debug.Log("Ball reset!!!");
+        //Debug.Log("Ball reset!!!");
         inPlay = false;
         transform.position = ballStartPosition;
+        //transform.rotation = Quaternion.identity;
         rigidbody.velocity = Vector3.zero;
         rigidbody.angularVelocity = Vector3.zero;
         rigidbody.useGravity = false;

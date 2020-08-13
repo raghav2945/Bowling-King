@@ -40,9 +40,10 @@ public class Pin : MonoBehaviour
     public void Raise() {
         if (IsStanding())
         {
-            Debug.Log("Raising pins name : " + this.name);
+            //Debug.Log("Raising pins name : " + this.name);
             rigidbody.useGravity = false;
             transform.Translate(new Vector3(0, distanceToRaise, 0), Space.World);
+            transform.rotation = Quaternion.Euler(270f, 0, 0);
         }
     }
 
